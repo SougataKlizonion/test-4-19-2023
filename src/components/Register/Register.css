@@ -1,0 +1,62 @@
+:root {
+    --primary-color:  rgb(213, 248, 248);
+    --secondary-color: #f2f2f2;
+    --spacing: 1rem;
+  }
+  
+  .main-register {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    height: 500px;
+    width: 100vh;
+  }
+  
+  .sub-register {
+    position: fixed;
+    background-color: var(--secondary-color);
+    border: 1px solid grey;
+    box-shadow: 2px 2px 5px 2px #888888;
+    text-align: center;
+    height: 50vh;
+    width: 50vh;
+    margin: auto;
+  }
+  
+  .pre-submit li {
+    margin-top: var(--spacing);
+  }
+  
+  .submit {
+    height: 25px;
+    width:55px;
+    margin:auto
+  }
+  .sub-register form div{
+      margin-top:2vh
+  }
+  .error{
+      margin-left:5px;
+      position:fixed;
+      z-index:100;
+      color:red
+  }
+  .image-upload{
+      margin-left:190px;
+      position:relative;
+      height:20px;
+      width:10px
+  }
+  .uploader_placeholder{
+      
+      
+      margin-left:100px
+  }
+  .pre-submit li{
+    margin-top: 86px;
+}
+.submit{
+    height: 25px;
+    width:55px;
+    margin: auto;
+}
