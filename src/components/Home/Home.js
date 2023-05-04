@@ -5,7 +5,6 @@ import { useNavigate, Link } from "react-router-dom";
 
 const Home = (e) => {
   const access_token = localStorage.getItem("token");
-
   const [names, setNames] = useState({});
   const [limit, setLimit] = useState(5);
   const [list, setList] = useState([]);
@@ -34,24 +33,21 @@ const Home = (e) => {
       setPage(page + 1);
     }
   };
-
-  useEffect(() => {
-    if (!access_token) {
-      navigate("/login");
-    }
-  }, []);
-
   useEffect(() => {
     try {
+      if (!access_token) {
+        navigate("/login");
+      }
       const GetApi = async (e) => {
         const res = await axios.get(
-          `http://localhost:2023/api/v1/data?limit=${limit}&sort=phone&page=${page}&asc=-1`,
-          {
-            headers: {
-              Authorization: `Bearer ${access_token}`,
-            },
-          }
+          `http://localhost:2023/api/v1/name?limit=${limit}&sort=${sort}&page=${page}&asc=${asc}`,
+          // {
+          //   headers: {
+          //     Authorization: `Bearer ${access_token}`,
+          //   },
+          // }
         );
+        console.log(res);
         setList(res.data.users);
         setCount(res.data.users.length);
         setLoading(false);
@@ -105,6 +101,7 @@ const Home = (e) => {
     );
     setList(response.data.users);
   };
+  
   const sortEmail = async (e) => {
     setAsc(asc * -1);
     setSort("email")

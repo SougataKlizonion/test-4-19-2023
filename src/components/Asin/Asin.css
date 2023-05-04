@@ -1,0 +1,93 @@
+:root {
+    --primary-color: rgb(213, 248, 248);
+    --secondary-color:  black;
+    --spacing: 1rem;
+  }
+  
+  .Home {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Home h1 {
+    text-align: center;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  #table {
+    text-align: center;
+    margin-bottom: 40px;
+    height: 100%;
+    width: 90%;
+  }
+  
+  .table-heads {
+    width: 10vh;
+  }
+  
+  .table-heads:hover {
+    cursor: pointer;
+  }
+  
+  .images {
+    height: 50px;
+  }
+  
+  .table-data {
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #888888;
+  }
+  .table-data:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .link{
+      text-decoration: none;
+      color: #808080;;
+  }
+  .link:hover{
+      color: green;
+  }
+  .logOut {
+      margin-left:60vh
+  }
+  .search {
+      margin-left:var(--spacing)
+  }
+  .sortLogo{
+      height:10px
+  }
+  div .footer{
+    display: flex;
+    height: 50px;
+  }
+  .prebutton{
+    margin-right: 20vh;
+    height: 20px;
+    width: 55px;
+  }
+  .prebutton:hover{
+    cursor: pointer;
+  }
+  .nextbutton{
+    margin-left:20vh;
+    height: 20px;
+    width: 55px;
+  }
+  .nextbutton:hover{
+    cursor: pointer;
+  }
+  .limit:hover{
+    cursor: pointer;
+    color:green;
+
+  }

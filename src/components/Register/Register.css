@@ -36,6 +36,8 @@
       margin-top:2vh
   }
   .error{
+    height: 2px;
+    width:10px;
       margin-left:5px;
       position:fixed;
       z-index:100;
