@@ -91,3 +91,15 @@
     color:green;
 
   }
+  .loader {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 10vh; /* set a fixed height for the loader container */
+  }
+  .loader img {
+    height: 30px; /* set a fixed height for the loader container */
+    width: 30px;
+  }
